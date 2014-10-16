@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Child and Baby Connect</title>
+        <meta name= "description" content= "Interactive Animal Sounds"> 
+        <meta name= "keywords" content= "Homepage">
+        <meta name= "author" content= "Amanda Brown!">        <link rel="stylesheet" type="text/css" href="Styles/Style.css" />       
+         <script type="text/javascript">
+                  function playSound(el,soundfile) {
+                  if (el.mp3) {
+                  if(el.mp3.paused) el.mp3.play();
+                  else el.mp3.pause();
+          } else {
+                  el.mp3 = new Audio(soundfile);
+                  el.mp3.play();
+                  }
+          }
+ </script>
+     </head>    
+    <body>
+       
+<div id="container">
+       
+
+            
+            
+        <div class="Header">
+                <h1>Interactive Animal Sounds</h1>
+                
+           </div>   
+        
+
+
+        <div id="Animals"><a href="PetAnimals.html">
+        			<img src="Images/PetAnimals.jpg" width="200" height="200" alt="Pet Animals" />
+        </a>
+        <a href="FarmAnimals.html">
+        			<img src="Images/FarmAnimals.jpg" width="200" height="200" alt="Farm Animals" />
+        
+        </a>
+        </div>
+        
+        
+       
+         
+        
+        
+        
+        
+        
+        
+       
+
+         <p  class="copyright"></p>
+        
+<p class="copyright">Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear());</script>Mandy Brown. All Rights Reserved<br />
+         <br />                 </p> </div>
+    </div>
+  </body>
+
+        
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

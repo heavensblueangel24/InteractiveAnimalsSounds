@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Interactive Animal Sounds</title>
+        <meta name= "description" content= "Interactive Animal Sounds"> 
+        <meta name= "keywords" content= "Pet Animals">
+        <meta name= "author" content= "Mandy Brown!">        <link rel="stylesheet" type="text/css" href="Styles/Style.css" />        <script type="text/javascript">
+                  function playSound(el,soundfile) {
+                  if (el.mp3) {
+                  if(el.mp3.paused) el.mp3.play();
+                  else el.mp3.pause();
+          } else {
+                  el.mp3 = new Audio(soundfile);
+                  el.mp3.play();
+                  }
+          }
+ </script>
+  </head>    
+    <body>
+
+         <div id="container">
+
+       
+
+        
+        <div class="floatl">
+    	<span onclick="playSound(this, 'Birds.mp3');">
+        		                    	<img src="Images/Birds.jpg" width="128" height="128" alt="Birds" />
+        </span>
+        
+       <span onclick="playSound(this, 'Dog.mp3');">
+        	                                  	
+				                    	<img src="Images/Dog.jpg" width="128" height="128" alt="Dog" />
+		 </span>			      				
+ 
+					
+        </div>
+        
+		<div class="floatr"> 
+		<span onclick="playSound(this, 'Cat.mp3');">       
+					               	
+					                    <img src="Images/Cat.jpg" width="128" height="128" alt="Cat" />
+		</span>
+	    <span onclick="playSound(this, 'Chickens.mp3');">
+	    		
+				                        <img src="Images/Chickens.jpg" width="128" height="128" alt="Chickens" />
+		</span>
+        			
+        </div>
+        
+        
+        
+        
+         <tr><td><a href="index.html">Home</a><a href="PetAnimals.html">Pet Animals</a><a href="FarmAnimals.html">Farm Animals</a></td></tr>
+
+
+        
+       
+
+         <p  class="copyright"></p>
+        
+<p class="copyright">Copyright &copy; <script>var d = new Date(); document.write(d.getFullYear());</script> Mandy Brown. All Rights Reserved<br />
+         <br />                 </p> </div>
+  </body>
+
+        
+</html>
